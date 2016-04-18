@@ -1,13 +1,6 @@
 package edu.ucsd.cs110.temperature;
-
 import static org.junit.Assert.*;
-
-/**
- * Created by vivek on 4/16/16.
- */
 import org.junit.Test;
-import edu.ucsd.cs110.temperature.Fahrenheit;
-import edu.ucsd.cs110.temperature.Temperature;
 public class FahrenheitTest {
     private float delta = 0.001f;
 
@@ -29,7 +22,7 @@ public class FahrenheitTest {
         assertTrue(string.startsWith(beginning));
 // Verify the prefix of the formatted string
         assertTrue(string.endsWith(ending));
-        // Verify the middle of the formatted string
+// Verify the middle of the formatted string
         int endIndex = string.indexOf(ending);
 // (Hint: what is the length of the middle of the string?)
         assertTrue(string.substring(0, endIndex).equals(beginning));
