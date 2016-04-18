@@ -7,7 +7,7 @@ public class FahrenheitTest {
     @Test
     public void testFahrenheit() {
         float value = 12.34f;
-        Fahrenheit temp = new Fahrenheit(value);
+        Fahrenheit temp = new Fahrenheit(value); 
         assertEquals(value, temp.getValue(), delta);
     }
 
